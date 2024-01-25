@@ -82,7 +82,12 @@
 
 .content .phone .ad-img{
   height: 450px;
-  background: ;
+  background: url("../imgs/phone_ad_img.webp") no-repeat center / cover;
+}
+
+/** 透明度 **/
+.content .phone .ad-img:hover{
+  opacity: 0.8;
 }
 
 
