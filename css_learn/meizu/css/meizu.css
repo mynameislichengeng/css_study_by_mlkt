@@ -90,5 +90,20 @@
   opacity: 0.8;
 }
 
+.content .phone .phone-wrap{
+  width: 100%;
+  background-color: #dedede;
+}
+
+.content .phone .phone-wrap .phone-box-top{
+  margin: 0 auto;
+  display: flex;
+  border: 1px solid #008cff;
+}
+
+.content .phone .phone-wrap .phone-box-top .phone-item{
+  /* border: 1 solid #008cff; */
+  
+}
 
 /** 内容结束 **/
