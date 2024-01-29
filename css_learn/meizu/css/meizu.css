@@ -91,19 +91,27 @@
 }
 
 .content .phone .phone-wrap{
-  width: 1240px;
+  width: 100%;
+  margin: 0 auto;
   background-color: #dedede;
 }
 
 .content .phone .phone-wrap .phone-box-top{
+  width: 1240px;
   margin: 0 auto;
   display: flex;
-  border: 1px solid #008cff;
+  justify-content: space-between;
 }
 
 .content .phone .phone-wrap .phone-box-top .phone-item{
   /* border: 1 solid #008cff; */
+  width: 610px;
   height: 610px;
+}
+
+.content .phone .phone-wrap .phone-box-top .phone-item img{
+  width: 460px;
+  height: 460px;
 }
 
 /** 内容结束 **/
