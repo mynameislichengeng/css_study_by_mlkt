@@ -91,7 +91,7 @@
 }
 
 .content .phone .phone-wrap{
-  width: 100%;
+  width: 1240px;
   background-color: #dedede;
 }
 
@@ -103,7 +103,7 @@
 
 .content .phone .phone-wrap .phone-box-top .phone-item{
   /* border: 1 solid #008cff; */
-  
+  height: 610px;
 }
 
 /** 内容结束 **/
