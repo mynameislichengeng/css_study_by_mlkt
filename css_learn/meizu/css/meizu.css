@@ -56,7 +56,7 @@
     height: 30px;
   }
 
-  .ad . wrap .ad-desc{
+  .ad .wrap .ad-desc{
     font-size: 14px;
     color: #999999;
     height: 21px;
@@ -107,6 +107,27 @@
   /* border: 1 solid #008cff; */
   width: 610px;
   height: 610px;
+  background-color: #fff;
+}
+
+.content .phone .phone-wrap .phone-box-top .phone-item .phone-name {
+  font-size: 28px;
+  color: #333333;
+  padding-top: 50px;
+}
+
+.content .phone .phone-wrap .phone-box-top .phone-item .phone-desc {
+  font-size: 18px;
+  color: #333333;
+}
+
+.content .phone .phone-wrap .phone-box-top .phone-item .phone-price {
+  color: red;
+  font-size: 18px;
+}
+
+.content .phone .phone-wrap .phone-box-top .phone-item .phone-price span{
+ font-size: 14px;
 }
 
 .content .phone .phone-wrap .phone-box-top .phone-item img{
