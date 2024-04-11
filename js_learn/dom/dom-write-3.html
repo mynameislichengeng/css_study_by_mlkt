@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="text" />
+    <input type="button" value="添加li" id="button" />
+    <ul></ul>
+
+    <script>
+        window.onload = function () {
+            var obutton = document.getElementById("button");
+            obutton.onclick = createLi
+        }
+
+        function createLi() {
+            var oText = document.getElementById("text")
+            var oUl = document.getElementsByTagName("ul")[0];
+            var oLi = document.createElement("li")
+            //赋值
+            oLi.innerHTML = oText.value;
+
+            //
+            var oA = document.createElement("a");
+            oA.innerHTML = "删除"
+            oA.href = "#"
+            oA.onclick = function () {
+                var mli = this.parentNode
+                oUl.removeChild(mli)
+            }
+            oLi.appendChild(oA);
+            oUl.appendChild(oLi);
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>

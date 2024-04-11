@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="h1">An HTML Document</h1>
+    <p><input id="elementNode" type="button" value="查看元素节点的各项值"></p>
+    <p><input id="text" type="button" value="查看文本节点的各项值"></input></p>
+    <p><input id="documentNode" type="button" value="查看文档节点的各项值"></p>
+    <p><input id="property" type="button" alt="这个是演示按钮" title="演示按钮提示标题" name="property" value="本按钮的属性节点演示">
+    </p>
+
+    <script>
+
+        function showElement() {
+            var element = document.getElementById("h1");
+            alert('nodetype:' + element.nodeType)
+            alert('nodeName:' + element.nodeName)
+            alert('nodeValue:' + element.nodeValue)
+            alert('element:' + element)
+        }
+
+        function showText() {
+            var element = document.getElementById("h1");
+            var text = element.childNodes[0];
+
+            console.log("#text\n\n")
+            console.log("nodeType:" + text.nodeType)
+            console.log("nodeValue:" + text.nodeValue)
+            console.log("nodeName:" + text.nodeName);
+
+            text.nodeValue = text.nodeValue + "abc";
+            console.log("text.data:" + text.data)
+        }
+
+        function showDocument() {
+            console.log("document\n\n")
+            console.log("nodeType:" + document.nodeType)
+            console.log("nodeValue:" + document.nodeValue)
+            console.log("nodeName:" + document.nodeName)
+            console.log("document:" + document)
+        }
+
+        function showAttr() {
+            var property = document.getElementById("property")
+            var attrs = property.attributes;
+            console.log("属性property")
+            for (var i = 0; i < attrs.length; i++) {
+                var attr = attrs[i];
+                console.log("attr.name:" + attr.name)
+                console.log("nodeType:" + attr.nodeType)
+                console.log("nodeName:" + attr.nodeName)
+                console.log("nodeValue:" + attr.nodeValue)
+                console.log("attr:" + attr)
+            }
+        }
+
+        function demo() {
+            var element = document.getElementById("elementNode");
+            element.onclick = showElement
+
+            var text = document.getElementById("text")
+            text.onclick = showText
+
+            var documentNode = document.getElementById("documentNode")
+            documentNode.onclick = showDocument;
+
+            var property = document.getElementById("property")
+            property.onclick = showAttr
+
+        }
+
+        window.onload = demo;
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="p">段落</p>
+
+    <script type="text/javascript">
+
+        var element = document.getElementById("p");
+
+        var text = document.getElementById("p").firstChild;
+
+        var property = document.getElementById("p").getAttributeNode("id");
+
+        console.log("元素节点nodeType返回值" + element.nodeType);
+        console.log("元素节点nodeName返回值" + element.nodeName);
+        console.log("元素节点nodeValue返回值" + element.nodeValue);
+
+        console.log("文本节点nodeType返回值" + text.nodeType);
+        console.log("文本节点nodeName返回值" + text.nodeName);
+        console.log("文本节点nodeValue返回值" + text.nodeValue);
+
+        console.log("属性节点nodeType返回值" + property.nodeType);
+        console.log("属性节点nodeName返回值" + property.nodeName);
+        console.log("属性节点nodeValue返回值" + property.nodeValue);
+
+        console.log("文档节点nodeType返回值" + document.nodeType);
+        console.log("文档节点nodeName返回值" + document.nodeName);
+        console.log("文档节点nodeValue返回值" + document.nodeValue);
+
+    </script>
+
+</body>
+
+</html>

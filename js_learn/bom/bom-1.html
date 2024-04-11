@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button>点击1</button>
+    <button>点击2</button>
+
+    <script>
+        var btn = document.querySelectorAll("button")
+
+        window.addEventListener('load', function () {
+            btn[0].addEventListener('click', function () {
+                alert('知否知否，点我应有弹框在手---')
+            })
+        })
+
+        window.addEventListener('load', function () {
+            alert('文档内容完全加载完成')
+        })
+
+        window.addEventListener('DOMContentLoaded', function () {
+            btn[1].addEventListener('click', function () {
+                alert('知否知否，点我应有弹框在手!!!')
+            })
+        })
+    </script>
+
+
+
+</body>
+
+</html>
